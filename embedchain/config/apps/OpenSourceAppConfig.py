@@ -19,7 +19,7 @@ class OpenSourceAppConfig(BaseAppConfig):
         :param model: Optional. GPT4ALL uses the model to instantiate the class.
         So unlike `App`, it has to be provided before querying.
         """
-        #self.model = model or "llama-2-7b-chat.ggmlv3.q4_0.bin"
+        self.model = model or "llama-2-7b-chat.ggmlv3.q4_0.bin"
 
         super().__init__(
             log_level=log_level,
